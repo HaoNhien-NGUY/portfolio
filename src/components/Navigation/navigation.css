@@ -1,21 +1,25 @@
 .navbar-wrapper {
     position: fixed;
-    z-index: 100;
+    z-index: 1;
     width: 100%;
-    padding: 1.3rem 0;
+    padding: 2rem 0;
     font-size: 2.5rem;
-    transition: font-size 0.3s;
+    background-color: rgba(255, 255, 255, 0);
+    transition: font-size 0.3s, padding 0.2s;
+    height: 3.2rem;
 }
 
 .navbar-wrapper.navbar-small {
-    font-size: 1.3rem;
+    /* background-color: rgb(255, 255, 255); */
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
 }
 
 .nav-items {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: left 0.5s, transform 0.5s;
+    transition: left 0.4s, transform 0.4s;
 }
 
 .nav-items.navbar-small {
@@ -33,27 +37,35 @@
 .nav-items li {
     display: inline-block;
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
-.nav-items li:after {
+.nav-items li a:after {
     background: none repeat scroll 0 0 transparent;
-    bottom: 0;
+    bottom: -7px;
     content: "";
     display: block;
     height: 2px;
-    left: 0;
     position: absolute;
-    background: rgb(0, 0, 0);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 35%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.2s ease 0s, bottom 0.3s ease 0s;
+    width: 100%;
 }
 
-.nav-items li:hover:after {
-    width: 100%;
-    left: 0;
+.nav-items li a:hover:after, .nav-items li a.selected:after {
+    background: rgba(48, 48, 48, 0.397);
+    bottom: -2px;
 }
 
 .nav-items li:not(:last-of-type) {
-    margin-right: 70px;
+    margin-right: 80px;
+    transition: margin-right 0.3s ease-in;
+}
+
+.nav-items li a{
+    color: black;
+}
+
+.nav-items.navbar-small li:not(:last-of-type) {
+    margin-right: 50px;
 }

@@ -1,32 +1,46 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './navigation.css';
 
 function Navigation(props) {
+    const { pageAnchor, inView } = props;
     const navWrapper = useRef();
     const navItems = useRef();
+    const [activeLi, setActiveLi] = useState();
 
-    function toggle(){
+    function toggle() {
         navWrapper.current.classList.toggle('navbar-small');
         navItems.current.classList.toggle('navbar-small');
     }
 
     useEffect(() => {
-        
-        if(props.inView) {
+        if (inView) {
             toggle();
         } else {
             toggle();
         }
-    }, [props.inView])
+    }, [inView])
+
+    useEffect(() => {
+        setActiveLi(pageAnchor.destination);
+    }, [pageAnchor])
 
     return (
         <>
             <div className="navbar-wrapper" ref={navWrapper}>
                 <div className="nav-items" ref={navItems}>
                     <ul>
-                        <li>HOME</li>
-                        <li onClick={props.scrolldiv}>PROJECTS</li>
-                        <li>CONTACT</li>
+                        <li>
+                            <a href="#accueil" className={`noselect ${activeLi === "accueil" ? "selected" : null}`} >Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#competences" className={`noselect ${activeLi === "competences" ? "selected" : null}`} >Compétences</a>
+                        </li>
+                        <li>
+                            <a href="#projets" className={`noselect ${activeLi === "projets" ? "selected" : null}`} >Projets</a>
+                        </li>
+                        <li>
+                            <a href="#contact" className={`noselect ${activeLi === "contact" ? "selected" : null}`} >Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
