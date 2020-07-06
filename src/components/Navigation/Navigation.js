@@ -30,16 +30,16 @@ function Navigation(props) {
                 <div className="nav-items" ref={navItems}>
                     <ul>
                         <li>
-                            <a href="#accueil" className={`noselect ${activeLi === "accueil" ? "selected" : null}`} >Accueil</a>
+                            <a href="#accueil" className={`noselect accueil ${activeLi === "accueil" ? "selected" : null}`} >Accueil</a>
                         </li>
                         <li>
-                            <a href="#competences" className={`noselect ${activeLi === "competences" ? "selected" : null}`} >Compétences</a>
+                            <a href="#competences" className={`noselect competences ${activeLi === "competences" ? "selected" : null}`}>Compétences</a>
                         </li>
                         <li>
-                            <a href="#projets" className={`noselect ${activeLi === "projets" ? "selected" : null}`} >Projets</a>
+                            <a href="#projets" className={`noselect projets ${activeLi === "projets" ? "selected" : null}`} >Projets</a>
                         </li>
                         <li>
-                            <a href="#contact" className={`noselect ${activeLi === "contact" ? "selected" : null}`} >Contact</a>
+                            <a href="#contact" className={`noselect contact ${activeLi === "contact" ? "selected" : null}`} >Contact</a>
                         </li>
                     </ul>
                 </div>

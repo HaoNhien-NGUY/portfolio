@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import { useInView } from 'react-intersection-observer';
 import ReactFullpage from '@fullpage/react-fullpage';
+import Accueil from './components/pages/accueil/accueil'
 
 function App() {
   const [test, inView, entry] = useInView({
@@ -24,7 +25,8 @@ function App() {
           return (
             <ReactFullpage.Wrapper>
               <div className="section" id="test" ref={test}>
-                <p>Section 1 (welcome to fullpage.js)</p>
+                <Accueil />
+                <div id="more" onClick={() => fullpageApi.moveSectionDown()}>MORE</div>
               </div>
               <div className="section" id="test2">
 

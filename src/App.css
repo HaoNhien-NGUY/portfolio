@@ -5,17 +5,27 @@
 }
 
 #test2 {
+  /* background-color: #7dc0ff;  */
+  /* B3B3FF */
   background-color: #BFE0FF;
+
 }
 
 #test3 {
-  background-color: #FFCA73;
+  background-color: #CDCCFF;
 }
 
 #test4 {
-  background-color: #72BBFF;
+  background-color: #FFE6D9;
 }
 
 .section {
   height: 100vh;
+}
+
+#more {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  cursor: pointer;
 }
