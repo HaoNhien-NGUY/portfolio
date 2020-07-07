@@ -21,6 +21,11 @@ function Navigation(props) {
     }, [inView])
 
     useEffect(() => {
+        if (pageAnchor.destination === "accueil")
+            navWrapper.current.classList.remove('z-depth-2');
+        else
+            navWrapper.current.classList.add('z-depth-2');
+
         setActiveLi(pageAnchor.destination);
     }, [pageAnchor])
 

@@ -3,7 +3,8 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import { useInView } from 'react-intersection-observer';
 import ReactFullpage from '@fullpage/react-fullpage';
-import Accueil from './components/pages/accueil/accueil'
+import Accueil from './components/pages/accueil/accueil';
+import developImg from './assets/develop-arrow.png';
 
 function App() {
   const [test, inView, entry] = useInView({
@@ -17,6 +18,7 @@ function App() {
       <Navigation inView={inView} entry={entry} pageAnchor={pageAnchor}/>
       <ReactFullpage
         //fullpage options
+        // navigation={true}
         scrollBar={true}
         anchors={['accueil', 'competences', 'projets', 'contact']}
         onLeave={(origin, destination, direction) => setPageAnchor({origin: origin.anchor, destination: destination.anchor}) }
@@ -26,7 +28,7 @@ function App() {
             <ReactFullpage.Wrapper>
               <div className="section" id="test" ref={test}>
                 <Accueil />
-                <div id="more" onClick={() => fullpageApi.moveSectionDown()}>MORE</div>
+                <img src={developImg} id="more" onClick={() => fullpageApi.moveSectionDown()}></img>
               </div>
               <div className="section" id="test2">
 

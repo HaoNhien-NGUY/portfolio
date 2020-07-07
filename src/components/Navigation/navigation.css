@@ -3,19 +3,20 @@
     z-index: 1;
     width: 100%;
     padding: 2rem 0;
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     background-color: rgb(255, 255, 255);
-    transition: font-size 0.3s, padding 0.2s, height 0.3s;
+    transition: font-size 0.3s, padding 0.2s, height 0.3s, box-shadow 0s 0.6s;
     /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.13); */
     height: 8rem;
 }
 
 .navbar-wrapper.navbar-small {
-    height: 3.2rem;
+    height: 3.5rem;
     background-color: rgb(255, 255, 255);
     /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.151); */
     font-size: 1.4rem;
     padding: 0.5rem 0 2.5rem 0;
+    transition: font-size 0.3s, padding 0.2s, height 0.3s, box-shadow 0s 0.2s;
 }
 
 .nav-items {
@@ -44,27 +45,33 @@
 }
 
 .nav-items li a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 7px;
+    /* background: none repeat scroll 0 0 transparent; */
+    bottom: -3px;
     content: "";
     display: block;
-    height: 2px;
+    height: 3px;
     position: absolute;
     background: rgba(0, 0, 0, 0);
-    transition: background 0.2s ease, bottom 0.3s ease 0s;
-    width: 100%;
+    /* background: #555; */
+    transition: background 0.2s ease-out, height 0.3s, width 0.2s;
+    width: 65%;
 }
 
 .nav-items li a:hover:after, .nav-items li a.selected:after {
-    background: #555;
-    bottom: 0px;
-}
-
-.nav-items li .accueil.selected:after {
     background: #72BBFF;
+    width: 100%;
+    bottom: -3px;
 }
 
-.nav-items li .projets.selected:after {
+.nav-items li a.selected:after {
+    height: 3px;
+}
+
+/* .nav-items li .accueil.selected:after {
+    background: #72BBFF;
+} */
+
+/* .nav-items li .projets.selected:after {
     background: #CDCCFF;
 }
 
@@ -74,7 +81,7 @@
 
 .nav-items li .contact.selected:after {
     background: #FFE6D9;
-}
+} */
 
 
 .nav-items li:not(:last-of-type) {
@@ -83,7 +90,12 @@
 }
 
 .nav-items li a{
+    /* text-transform: uppercase; */
     color: #333;
+}
+
+.nav-items.navbar-small li a {
+    color: #555;
 }
 
 .nav-items.navbar-small li:not(:last-of-type) {

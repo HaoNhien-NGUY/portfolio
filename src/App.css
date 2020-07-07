@@ -12,11 +12,11 @@
 }
 
 #test3 {
-  background-color: #CDCCFF;
+  background-color: #FFE6D9;
 }
 
 #test4 {
-  background-color: #FFE6D9;
+  background-color: #CDCCFF;
 }
 
 .section {
@@ -24,8 +24,32 @@
 }
 
 #more {
+  width: 35px;
   position: absolute;
-  bottom: 3rem;
+  bottom: 1.5rem;
   left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
+}
+
+#more:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #more {
+    animation: moreUpDown infinite 2s ease-in-out;
+  }
+}
+
+@keyframes moreUpDown {
+  0% {
+    bottom: 2.4rem;
+  }
+  30% {
+    bottom: 1.5rem;
+  }
+  55%, 100% {
+    bottom: 2.4rem;
+  }
 }
