@@ -3,7 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import { useInView } from 'react-intersection-observer';
 import ReactFullpage from '@fullpage/react-fullpage';
-import Accueil from './components/pages/accueil/accueil';
+import Accueil from './components/pages/accueil/Accueil';
 import developImg from './assets/develop-arrow.png';
 
 function App() {
@@ -19,24 +19,24 @@ function App() {
       <ReactFullpage
         //fullpage options
         // navigation={true}
-        scrollBar={true}
+        // scrollBar={true}
         anchors={['accueil', 'competences', 'projets', 'contact']}
         onLeave={(origin, destination, direction) => setPageAnchor({origin: origin.anchor, destination: destination.anchor}) }
 
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className="section" id="test" ref={test}>
+              <div className="section" id="section-1" ref={test}>
                 <Accueil />
                 <img src={developImg} id="more" onClick={() => fullpageApi.moveSectionDown()}></img>
               </div>
-              <div className="section" id="test2">
+              <div className="section" id="section-2">
 
               </div>
-              <div className="section" id="test3">
+              <div className="section" id="section-3">
                 <p>projets</p>
               </div>
-              <div className="section" id="test4">
+              <div className="section" id="section-4">
                 <p>contact</p>
               </div>
             </ReactFullpage.Wrapper>

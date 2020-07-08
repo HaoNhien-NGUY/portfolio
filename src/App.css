@@ -1,21 +1,21 @@
-#test {
+#section-1 {
   /* background-color: #72BBFF; */
   background-color: white;
   position: relative;
 }
 
-#test2 {
+#section-2 {
   /* background-color: #7dc0ff;  */
   /* B3B3FF */
   background-color: #BFE0FF;
 
 }
 
-#test3 {
+#section-3 {
   background-color: #FFE6D9;
 }
 
-#test4 {
+#section-4 {
   background-color: #CDCCFF;
 }
 
@@ -44,12 +44,12 @@
 
 @keyframes moreUpDown {
   0% {
-    bottom: 2.4rem;
+    bottom: 3.4rem;
   }
   30% {
-    bottom: 1.5rem;
+    bottom: 2.5rem;
   }
   55%, 100% {
-    bottom: 2.4rem;
+    bottom: 3.4rem;
   }
 }
