@@ -1,0 +1,10 @@
+.links-projects {
+    position: absolute;
+    bottom: 0;
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.5rem;
+}

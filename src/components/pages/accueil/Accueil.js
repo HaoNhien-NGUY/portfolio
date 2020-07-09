@@ -11,7 +11,7 @@ const toFrom = {
     to: { opacity: 1, top: "0px" },
     from: { opacity: 0, top: "30px" }
 };
-const conf = config.gentle;
+const conf = config.default;
 const socialsConfig = {tension: 250, friction: 20};
 
 function Accueil() {
@@ -21,7 +21,7 @@ function Accueil() {
     const enterPageH1 = useSpring({ ...toFrom, config: conf, delay: 200 });
     const enterPageH3 = useSpring({ ...toFrom, config: conf, delay: 400 });
     const enterPageP = useSpring({ ...toFrom, config: conf, delay: 600 });
-    const enterPageSocials = useSpring({ to: { opacity: 1, bottom: "-3.6rem" }, from: { opacity: 0, bottom: "-5.6rem" }, config: conf, delay: 800 });
+    const enterPageSocials = useSpring({ to: { opacity: 1, bottom: "-3.8rem" }, from: { opacity: 0, bottom: "-5.8rem" }, config: conf, delay: 600 });
     const [githubHover, setGithubHover] = useSpring(() => ({ top: "0px", config: socialsConfig } ));
     const [linkedInHover, setLinkedInHover] = useSpring(() => ({ top: "0px", config: socialsConfig }));
     const [cvHover, setCvHover] = useSpring(() => ({ top: "0px", width: "2.5rem", config: socialsConfig }));
@@ -30,8 +30,8 @@ function Accueil() {
         <div className="container accueil">
             <div className="row">
                 <div className="col l8 m12 offset-l2 main-frame">
-                    <animated.h1 ref={titleName} className="position-relative" style={enterPageH1}>NGUYEN<br></br> Hao-Nhien</animated.h1>
-                    <animated.h3 ref={titleRole} className="position-relative" style={enterPageH3}>Développeur Web Full Stack.</animated.h3>
+                    <animated.h1 className="position-relative" style={enterPageH1}>NGUYEN<br></br> Hao-Nhien</animated.h1>
+                    <animated.h3 className="position-relative" style={enterPageH3}>Développeur Web Full Stack.</animated.h3>
                     <animated.p className="flow-text bio position-relative" style={enterPageP}>Blabla bla bla je suis etudiant au samsung campus en premiere annee. Blabla bla bla je suis etudiant au samsung campus en premiere annee. Blabla bla bla je suis etudiant au samsung campus en premiere annee.</animated.p>
                     <animated.div className="socials" style={enterPageSocials}>
                         <animated.a href="https://github.com/HaoNhien-NGUY" target="_blanc"

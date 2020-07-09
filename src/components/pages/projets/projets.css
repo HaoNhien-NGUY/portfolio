@@ -1,0 +1,51 @@
+.project-card {
+    /* border: solid 1px black; */
+    border-radius: 0.8rem;
+    background-color: white;
+    height: 90%;
+    margin-top: 1.2rem;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,.05), 0 16px 34px 0 rgba(0,0,0,.1); */
+}
+
+.info-projets .row {
+    padding-top: 4rem;
+    margin-bottom: 0;
+}
+
+.info-projets p {
+    color: #345670;
+    font-size: 1.4rem;
+}
+
+.info-projets h4 span {
+    position: relative;
+    color: #395E80;
+    font-weight: 600;
+}
+
+.swiper-pagination {
+    /* position: relative !important; */
+    bottom: 0px !important;
+}
+
+.swiper-container {
+    height: 70vh;
+    /* padding: 12rem 0 4rem 0; */
+}
+
+.swiper-button-prev, .swiper-button-next {
+    /* bottom: -10px !important; */
+    color: #72BBFF;
+}
+
+.swiper-button-next {
+    right: 30px !important;
+}
+
+.swiper-button-prev {
+    left: 30px !important;
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}
