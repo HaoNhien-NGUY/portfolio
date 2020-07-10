@@ -33,6 +33,7 @@ function App() {
                 <Projets />
               </div>
               <div className="section" id="section-3">
+                <p>au cours de mon annee, j'ai eu l'occasion d'experimente avec un grand nombre de technologies ...</p>
               </div>
               <div className="section" id="section-4">
               </div>

@@ -9,14 +9,12 @@ import './accueil.css';
 
 const toFrom = {
     to: { opacity: 1, top: "0px" },
-    from: { opacity: 0, top: "30px" }
+    from: { opacity: 0, top: "35px" }
 };
-const conf = config.default;
+const conf = config.slow;
 const socialsConfig = {tension: 250, friction: 20};
 
 function Accueil() {
-    const titleName = useRef();
-    const titleRole = useRef();
 
     const enterPageH1 = useSpring({ ...toFrom, config: conf, delay: 200 });
     const enterPageH3 = useSpring({ ...toFrom, config: conf, delay: 400 });
@@ -24,7 +22,7 @@ function Accueil() {
     const enterPageSocials = useSpring({ to: { opacity: 1, bottom: "-3.8rem" }, from: { opacity: 0, bottom: "-5.8rem" }, config: conf, delay: 600 });
     const [githubHover, setGithubHover] = useSpring(() => ({ top: "0px", config: socialsConfig } ));
     const [linkedInHover, setLinkedInHover] = useSpring(() => ({ top: "0px", config: socialsConfig }));
-    const [cvHover, setCvHover] = useSpring(() => ({ top: "0px", width: "2.5rem", config: socialsConfig }));
+    const [cvHover, setCvHover] = useSpring(() => ({ top: "0px", config: socialsConfig }));
 
     return (
         <div className="container accueil">
@@ -47,7 +45,7 @@ function Accueil() {
                             <img src={linkedInImg} alt="linkedIn logo"></img>
                         </animated.a>
                         <animated.a href={cvPdf} target="_blanc" 
-                            onMouseEnter={() => setCvHover({ top: "-5px",width: "6rem" })}
+                            onMouseEnter={() => setCvHover({ top: "-5px" })}
                             onMouseLeave={() => setCvHover({ top: "0px" })}
                             style={cvHover}>
                             <img src={cvImg} alt="cv logo"></img>

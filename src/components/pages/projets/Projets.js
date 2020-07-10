@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Swiper, { Pagination, Keyboard, Navigation } from 'swiper';
+import { useSpring, animated, config } from 'react-spring';
+
 import 'swiper/swiper-bundle.css';
 import './projets.css'
 
 import Ecommerce from './cards/Ecommerce';
+import MyIrc from './cards/MyIrc'
 
 function Projets() {
+    const [eCommerceHover, setECommerceHover] = useSpring(() => ({ transform: "scale(1)", config: config.default }));
 
     useEffect(() => {
         Swiper.use([Pagination, Keyboard, Navigation]);
@@ -29,42 +33,44 @@ function Projets() {
     }, []);
 
     return (
-        <div>
+        <>
             <div className="container info-projets">
                 <div className="row">
-                    <div className="col l7 m12">
+                    <div className="col l6 m12">
                         <h4><span>Quelques projets</span></h4>
-                        <p className="">Toujours en plein apprentissage, voici une selection de projets realisee au cours de mes 7 premiers mois au Samsung Campus.</p>
+                        <p>Toujours en plein apprentissage, voici une selection de projets realisée au cours de mes 7 premiers mois au Samsung Campus.</p>
                     </div>
                 </div>
             </div>
             <div className="row">
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
-                        <div className="swiper-slide project-card z-depth-3">
-                            <Ecommerce />
+                        <div className="swiper-slide project-card ecommerce"
+                        // onClick={() => setECommerceHover({ transform: "scale(1.3)" })}
+                        // onMouseLeave={() => setECommerceHover({ transform: "scale(1)" })}
+                        style={eCommerceHover} >
+                            <Ecommerce set={setECommerceHover}/>
                         </div>
-                        <div className="swiper-slide project-card z-depth-3">
+                        <div className="swiper-slide project-card">
+                            <MyIrc />
+                        </div>
+                        <div className="swiper-slide project-card">
+                            <MyIrc />
 
                         </div>
-                        <div className="swiper-slide project-card z-depth-3">
-
-                        </div>
-                        <div className="swiper-slide project-card z-depth-3">
-
-                        </div>
-                        <div className="swiper-slide project-card z-depth-3">
-
+                        <div className="swiper-slide project-card">
+                            <MyIrc />
                         </div>
                     </div>
 
-
-                    <div className="swiper-button-next"></div>
-                    <div className="swiper-button-prev"></div>
+                    <div className="carousel-nav">
+                        <div className="swiper-button-prev"></div>
+                        <div className="swiper-button-next"></div>
+                    </div>
                     {/* <div class="swiper-pagination"></div> */}
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

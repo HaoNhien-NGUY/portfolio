@@ -1,0 +1,88 @@
+.links-projects {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    padding-bottom: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-projects .button {
+    font-size: 1.3rem;
+    color: white;
+    background-color: #373699;
+    padding: 4px 13px;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.links-projects .show-details {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.links-projects .button.gitcode {
+    border: solid 1px #373699;
+    background-color: white;
+    color: #373699;
+}
+
+.links-projects .button:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.links-projects .show-details {
+    position: relative;
+    display: flex;
+    color: #373699;
+}
+
+.links-projects .show-details i {
+    margin-left: 6px;
+    position: relative;
+}
+
+
+@keyframes moveLeftRight {
+    0% {
+      left : 0px;
+    }
+    50% {
+      left: 10px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+
+.card-content {
+    /* width: inherit; */
+    height: 100%;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+.card-content h5 {
+    color: #504ec7;
+    margin-top: 0;
+    padding-top: 16px;
+}
+
+.card-content h4 {
+    color: #373699;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.card-content img {
+    max-width: 100%;
+    border: solid 1px #373699;
+    /* border-radius: 0.6rem; */
+    margin-top: 1.1rem;
+}
+
+.card-content p {
+    font-size: 1.4rem;
+    color: #555;
+}
