@@ -32,7 +32,9 @@ function MyIrc() {
 
             <animated.div class="c front z-depth-" style={{ opacity, transform: transform.interpolate(t => `${t} rotateY(180deg)`) }} >
                 <div className="card-content">
-
+                    <div className="links-projects">
+                        <div className="show-front" onClick={() => set(state => !state)} ><i class="small material-icons">arrow_back</i> Retour</div>
+                    </div>
                 </div>
             </animated.div>
         </>

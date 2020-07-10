@@ -23,10 +23,10 @@ function Projets() {
             centeredSlides: true,
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
             breakpoints: {
-                640: { slidesPerView: 2, spaceBetween: 10 },
-                992: { slidesPerView: 2, spaceBetween: 30 },
-                1200: { slidesPerView: 3, spaceBetween: 30 },
-                1600: { slidesPerView: 4, spaceBetween: 60 },
+                640: { slidesPerView: 2, spaceBetween: 30 },
+                992: { slidesPerView: 2, spaceBetween: 40 },
+                1200: { slidesPerView: 3, spaceBetween: 40 },
+                1600: { slidesPerView: 4, spaceBetween: 50 },
             }
         });
 
@@ -36,7 +36,7 @@ function Projets() {
         <>
             <div className="container info-projets">
                 <div className="row">
-                    <div className="col l6 m12">
+                    <div className="col xl6 l9 m12">
                         <h4><span>Quelques projets</span></h4>
                         <p>Toujours en plein apprentissage, voici une selection de projets realisée au cours de mes 7 premiers mois au Samsung Campus.</p>
                     </div>
@@ -63,7 +63,7 @@ function Projets() {
                         </div>
                     </div>
 
-                    <div className="carousel-nav">
+                    <div className="carousel-nav hide-on-med-and-down">
                         <div className="swiper-button-prev"></div>
                         <div className="swiper-button-next"></div>
                     </div>

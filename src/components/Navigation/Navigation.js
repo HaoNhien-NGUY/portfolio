@@ -26,7 +26,7 @@ function Navigation(props) {
 
     return (
         <>
-            <div className="navbar-wrapper" ref={navWrapper}>
+            <div className="navbar-wrapper hide-on-med-and-down" ref={navWrapper}>
                 <div className="nav-items" ref={navItems}>
                     <ul>
                         <li>
