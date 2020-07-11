@@ -28,3 +28,9 @@ code {
   -ms-user-select: none;
   user-select: none;
 }
+
+a.external-link::after {
+  content: url('./assets/external-link.ico');
+  margin: 0px 0px 0px 4px;
+  width: 5px;
+}

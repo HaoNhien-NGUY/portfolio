@@ -1,3 +1,5 @@
+/* ---------- bottom links ---------- */
+
 .links-projects {
     position: absolute;
     bottom: 0;
@@ -11,18 +13,19 @@
 .links-projects .button {
     font-size: 1.3rem;
     color: white;
-    background-color: #373699;
-    padding: 4px 13px;
+    background-color: #504ec7;
+    padding: 6px 13px;
     cursor: pointer;
-    border-radius: 0.3rem;
-    border: solid 1px #373699;
+    border-radius: 2px;
+    border: solid 1px #504ec7;
     transition: color 0.3s, background-color 0.3s;
     position: relative;
 }
 
 .links-projects .button:hover {
-    background-color: white;
-    color: #373699;
+    background-color: #252466;
+    color: white;
+    border-color: #252466;
 }
 
 .links-projects .show-details, .links-projects .show-front {
@@ -31,15 +34,15 @@
 }
 
 .links-projects .button.gitcode {
-    border: solid 1px #373699;
+    border: solid 1px #504ec7;
     background-color: white;
-    color: #373699;
-    /* transition: color 0.3s, background-color 0.3s; */
+    color: #504ec7;
 }
 
 .links-projects .button.gitcode:hover {
     color: white;
-    background-color: #373699;
+    border-color: #252466;
+    background-color: #252466;
 }
 
 .links-projects .button:not(:last-of-type) {
@@ -49,7 +52,24 @@
 .links-projects .show-details {
     position: relative;
     display: flex;
-    color: #373699;
+    color: #504ec7;
+}
+
+.links-projects .show-details:after {
+    content: "";
+    bottom: -3px;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    background: #504ec700;
+    transition: background 0.2s, width 0.2s;
+    width: 50%;
+}
+
+.links-projects .show-details:hover:after {
+    width: 100%;
+    background: #504ec7;
 }
 
 .links-projects .show-details i {
@@ -68,6 +88,7 @@
     margin-right: 6px;
 }
 
+/* ---------- Card content ---------- */
 
 .card-content {
     /* width: inherit; */
@@ -86,26 +107,73 @@
     color: #373699;
     font-weight: 600;
     margin-top: 0;
+    margin-bottom: 0.3rem;
 }
 
 .card-content img {
     max-width: 100%;
-    border: solid 1px #333;
-    /* border-radius: 0.6rem; */
+    border: solid 1px #555;
+    /* border-radius: 0.5rem; */
     margin-top: 1.1rem;
 }
 
 .card-content p {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: #555;
 }
 
-.card-content .technos {
-    color: #333;
+.card-content .card-description h5, .card-content .card-description p {
+    color: white;
 }
 
-.card-content .card-description, 
-.card-content .card-description p
-{
-    color: white;
+.card-content .card-description p {
+    font-size: 1.2rem;
+}
+
+.card-content .card-description h5 {
+    border-bottom: solid 2px white;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ---------- technologies used ---------- */
+
+.card-content .technos {
+    /* margin-top: 4.2rem; */
+    margin-bottom: 1.7rem;
+    display: flex;
+}
+
+.card-content .technos span {
+    font-size: 1.1rem;
+    border: solid 1px rgb(34, 34, 34);
+    padding: 4px 10px;
+    border-radius: 0.3rem;
+    background-color: white;
+    color: rgb(34, 34, 34);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.card-content .technos span:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+/* ---------- img-wrapper ---------- */
+
+.container-img {
+    max-width: 100%;
+    margin-bottom: 2.6rem;
+}
+
+.image-wrapper {
+    position: relative;
+    padding-bottom: 50%;
+}
+
+.image-wrapper img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }

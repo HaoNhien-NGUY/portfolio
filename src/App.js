@@ -19,7 +19,7 @@ function App() {
       <ReactFullpage
         // navigation={true}
         // scrollBar={true}
-        anchors={['accueil', 'projets', 'competences', 'contact']}
+        anchors={['accueil', 'competences', 'projets', 'contact']}
         onLeave={(origin, destination, direction) => setPageAnchor({ origin: origin.anchor, destination: destination.anchor })}
 
         render={({ state, fullpageApi }) => {
@@ -30,10 +30,10 @@ function App() {
                 <img src={developImg} id="more" onClick={() => fullpageApi.moveSectionDown()}></img>
               </div>
               <div className="section" id="section-2">
-                <Projets />
+                <p>au cours de mon annee, j'ai eu l'occasion d'experimente avec un grand nombre de technologies et j'ai beaucoup appris en peu de temps, mais j'ai surtout appris a apprendre, jai pris confiance en mes capacite d'apprentissage ...</p>
               </div>
               <div className="section" id="section-3">
-                <p>au cours de mon annee, j'ai eu l'occasion d'experimente avec un grand nombre de technologies ...</p>
+                <Projets />
               </div>
               <div className="section" id="section-4">
               </div>

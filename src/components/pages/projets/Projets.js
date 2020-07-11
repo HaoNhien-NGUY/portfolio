@@ -6,7 +6,10 @@ import 'swiper/swiper-bundle.css';
 import './projets.css'
 
 import Ecommerce from './cards/Ecommerce';
-import MyIrc from './cards/MyIrc'
+import MyIrc from './cards/MyIrc';
+import Puissance4 from './cards/Puissance4';
+import MySnapchat from './cards/MySnapchat';
+import MyQuiz from './cards/MyQuiz'
 
 function Projets() {
     const [eCommerceHover, setECommerceHover] = useSpring(() => ({ transform: "scale(1)", config: config.default }));
@@ -25,8 +28,8 @@ function Projets() {
             breakpoints: {
                 640: { slidesPerView: 2, spaceBetween: 30 },
                 992: { slidesPerView: 2, spaceBetween: 40 },
-                1200: { slidesPerView: 3, spaceBetween: 40 },
-                1600: { slidesPerView: 4, spaceBetween: 50 },
+                1250: { slidesPerView: 3, spaceBetween: 40 },
+                1600: { slidesPerView: 4, spaceBetween: 60 },
             }
         });
 
@@ -38,7 +41,7 @@ function Projets() {
                 <div className="row">
                     <div className="col xl6 l9 m12">
                         <h4><span>Quelques projets</span></h4>
-                        <p>Toujours en plein apprentissage, voici une selection de projets realisée au cours de mes 7 premiers mois au Samsung Campus.</p>
+                        <p>Toujours en plein apprentissage, voici une selection de projets realisés au cours de mes 7 premiers mois au Samsung Campus.</p>
                     </div>
                 </div>
             </div>
@@ -55,11 +58,13 @@ function Projets() {
                             <MyIrc />
                         </div>
                         <div className="swiper-slide project-card">
-                            <MyIrc />
-
+                            <MySnapchat />
                         </div>
                         <div className="swiper-slide project-card">
-                            <MyIrc />
+                            <MyQuiz />
+                        </div>
+                        <div className="swiper-slide project-card">
+                            <Puissance4 />
                         </div>
                     </div>
 
