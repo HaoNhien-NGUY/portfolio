@@ -1,0 +1,25 @@
+.contact {
+    /* min-height: 70vh ; */
+}
+
+.contact .title {
+    margin-bottom: 6rem;
+    color: black;
+}
+
+.contact h4{
+    margin-top: 3rem;
+}
+
+.contact h3 {
+    margin-top: 0;
+    color: #72BBFF;
+}
+
+.contact h3 a {
+    color: #72BBFF;
+}
+
+.contact h3 a:hover {
+    text-decoration: underline;
+}

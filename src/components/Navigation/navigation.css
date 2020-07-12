@@ -58,7 +58,7 @@
 }
 
 .nav-items li a:hover:after, .nav-items li a.selected:after {
-    background: #72BBFF;
+    background: #555;
     width: 100%;
     bottom: -3px;
 }
@@ -67,9 +67,9 @@
     height: 3px;
 }
 
-/* .nav-items li .accueil.selected:after {
+.nav-items li .accueil:hover:after, .nav-items li .accueil.selected:after {
     background: #72BBFF;
-} */
+}
 
 /* .nav-items li .projets.selected:after {
     background: #CDCCFF;

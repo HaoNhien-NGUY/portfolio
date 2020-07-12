@@ -30,21 +30,21 @@ function Accueil() {
                 <div className="col l8 m12 offset-l2 main-frame">
                     <animated.h1 className="position-relative" style={enterPageH1}>NGUYEN<br></br> Hao-Nhien</animated.h1>
                     <animated.h3 className="position-relative" style={enterPageH3}>Développeur Web Full Stack.</animated.h3>
-                    <animated.p className="flow-text bio position-relative" style={enterPageP}>Blabla bla bla je suis etudiant au samsung campus en premiere annee. Blabla bla bla je suis etudiant au samsung campus en premiere annee. Blabla bla bla je suis etudiant au samsung campus en premiere annee.</animated.p>
+                    <animated.p className="flow-text bio position-relative" style={enterPageP}>Bonjour, je suis etudiant au Samsung Campus où j'apprends le développement web. Curieux, j'aime apprendre et découvrir de nouvelles technologies.</animated.p>
                     <animated.div className="socials" style={enterPageSocials}>
-                        <animated.a href="https://github.com/HaoNhien-NGUY" target="_blanc"
+                        <animated.a href="https://github.com/HaoNhien-NGUY" target="_blanc" rel="noopener noreferrer"
                             onMouseEnter={() => setGithubHover({ top: "-5px" })}
                             onMouseLeave={() => setGithubHover({ top: "0px" })}
                             style={githubHover}>
                             <img src={githubImg} alt="github logo"></img>
                         </animated.a>
-                        <animated.a href="https://www.linkedin.com/in/haonhien-nguyen/" target="_blanc" 
+                        <animated.a href="https://www.linkedin.com/in/haonhien-nguyen/" target="_blanc" rel="noopener noreferrer"
                             onMouseEnter={() => setLinkedInHover({ top: "-5px" })}
                             onMouseLeave={() => setLinkedInHover({ top: "0px" })}
                             style={linkedInHover}>
                             <img src={linkedInImg} alt="linkedIn logo"></img>
                         </animated.a>
-                        <animated.a href={cvPdf} target="_blanc" 
+                        <animated.a href={cvPdf} target="_blanc" rel="noopener noreferrer"
                             onMouseEnter={() => setCvHover({ top: "-5px" })}
                             onMouseLeave={() => setCvHover({ top: "0px" })}
                             style={cvHover}>

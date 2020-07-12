@@ -1,0 +1,67 @@
+.competences {
+    padding-top: 2.5rem;
+}
+
+.competences .formation p {
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.competences .formation {
+    position: relative;
+}
+
+.competences .skills {
+    padding-bottom: 20px !important;
+}
+
+.competences .skills p {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0.4rem 0;
+    padding-left: 0.3rem;
+}
+
+.competences .skills h4 {
+    color: #373699;
+    margin-bottom: 1.5rem;
+}
+
+.competences h3 {
+    color: #333;
+}
+
+.competences .recherche {
+    padding-left: 1.5rem;
+}
+
+.competences .recherche p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+@media screen and (min-width: 992px) {
+    .competences .formation:after {
+        content: "";
+        position: absolute;
+        background: #333;
+        width: 2px;
+        height: 75%;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.8rem;
+    }
+}
+
+/* @media screen and (min-width: 992px) {
+    .competences .recherche {
+        transform: translateY(120%);
+    }
+} */
+
+.competences .cards {
+    background-color: white;
+    border-radius: 6px;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+}

@@ -51,15 +51,15 @@
 
 .info-projets p {
     /* color: #345670; */
-    font-size: 1.4rem;
-    color: #333;
+    font-size: 1.2rem;
+    color: #555;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .info-projets h4 span {
     position: relative;
-    color: #504ec7;
+    color: #333;
     font-weight: 600;
 }
 
@@ -76,7 +76,7 @@
 
 .swiper-button-prev, .swiper-button-next {
     /* bottom: -10px !important; */
-    color: #373699;
+    color: black;
 }
 
 .swiper-button-next {
@@ -98,14 +98,14 @@
 
 .carousel-nav {
     position: absolute;
-    top: -80px;
+    top: -50px;
     right: 80px;
     display: flex;
 }
 
 .c {
-    box-shadow: 0px 10px 16px 10px rgba(0, 0, 0, 0.06), 0 5px 20px 0 rgba(0, 0, 0, 0.075);
-    border-radius: 0.6rem;
+    box-shadow: 0px 10px 16px 10px rgba(0, 0, 0, 0.06), 0 5px 10px 0 rgba(0, 0, 0, 0.085);
+    border-radius: 6px;
     background-color: white;
     position: absolute;
     width: 100%;

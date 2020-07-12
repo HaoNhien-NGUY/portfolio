@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './projects-cards.css';
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
-import myirc1 from '../../../../assets/projects-screenshots/myirc3.png';
+import mysnapchat1 from '../../../../assets/projects-screenshots/mysnapchat5.png';
 
-function MyIrc() {
+function Mern() {
 
     const [flipped, set] = useState(false)
     const { transform, opacity } = useSpring({
@@ -16,23 +16,23 @@ function MyIrc() {
         <>
             <animated.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform, zIndex: +!flipped }} >
                 <div className="card-content">
-                    <h5>my irc</h5>
-                    <h4>Serveur de chat IRC</h4>
+                    <h5>my snapchat</h5>
+                    <h4>Imitation de Snapchat</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={myirc1}></img>
+                            <img data-src={mysnapchat1}></img>
                         </div>
                     </div>
                     <div className="technos row">
                         <div className="col s12" style={{ padding: 0 }}>
-                            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>Socket.IO</span>
+                            <span>React.js</span><span>API REST</span><span>JSON Web Token</span>
                         </div>
                     </div>
-                    <p>Chat instantané avec possibilité de connexion à plusieurs channels simultanément.</p>
+                    <p>Reproduction des fonctionnalité de Snapchat en utilisant l'API fournie par EPITECH.</p>
                     <div className="links-projects">
                         <div>
-                            <a href="https://haonhien-my-irc.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="button external-link">Démo</a>
-                            <a href="https://github.com/HaoNhien-NGUY/my_irc" target="_blank" rel="noopener noreferrer" className="button gitcode">{'<'} Code {'/>'}</a>
+                            <a href="http://our-snapchat.surge.sh/" target="_blank" className="button external-link">Démo</a>
+                            <a href="https://github.com/HaoNhien-NGUY/my_snapchat/tree/master/my_snapchat" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" className="button gitcode">{'<'} Code {'/>'}</a>
                         </div>
                         <div className="show-details" onClick={() => set(state => !state)} >Détails <i className="small material-icons">arrow_forward</i></div>
                     </div>
@@ -42,10 +42,11 @@ function MyIrc() {
             <animated.div className="c front z-depth-" style={{ opacity, transform: transform.interpolate(t => `${t} rotateY(180deg)`) }} >
                 <div className="card-content">
                     <div className="card-description">
-                        <p style={{ marginTop: 0, paddingTop: "1.5rem" }}>Réalisé du 11 mai 2020 au 24 mai 2020</p>
-                        <h5>Serveur de chat IRC</h5>
-                        <p>Réalisation d'un serveur IRC grâce à Node.js / Express.js / Socket.IO et React.js en front.</p>
-                        <p>Ce projet est ma vraie première expérience avec React.js et aussi ma première introduction aux WebSockets notamment avec Socket.IO.</p>
+                        <p style={{ marginTop: 0, paddingTop: "1.5rem" }}>Réalisé du 25 mai 2020 au 31 mai 2020</p>
+                        <h5>Imitation de Snapchat</h5>
+                        <p>Login: <b>forsen@forsen.ee</b> - Password: <b>forsen</b></p>
+                        <p>Envoie d'images à d'autres utilisateurs pour un laps de temps, qui seront supprimés par la suite.</p>
+                        <p>Utilisation d'une API externe. <br></br>Le site a été réalisé pour être mobile first</p>
                     </div>
                     <div className="links-projects">
                         <div className="show-front" onClick={() => set(state => !state)} ><i className="small material-icons">arrow_back</i> Retour</div>
@@ -56,4 +57,4 @@ function MyIrc() {
     )
 }
 
-export default MyIrc;
+export default Mern;
