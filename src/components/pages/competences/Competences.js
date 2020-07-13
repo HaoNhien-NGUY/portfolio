@@ -13,26 +13,27 @@ function Competences() {
                 </div>
                 <div className="col l6 m12 recherche">
                     <p>En recherche d'une <b>alternance</b> en contrat de professionnalisation.</p>
-                    <p>Du<b> 2 novembre 2020</b> au <b>29 octobre 2021.</b><br></br> Au rythme de <b>3 semaines en entreprises / 1 semaine en formation.</b></p>
+                    <p>Du<b> 2 novembre 2020</b> au <b>29 octobre 2021</b> au rythme de <br></br><b>3 semaines en entreprises / 1 semaine en formation.</b></p>
                 </div>
             </div>
             <h3 className=""style={{marginTop: "3.8rem"}}>Compétences</h3>
             <div className="row  skills">
                 <div className="col m6 offset-l0 l2">
-                    <h4 className="">Front-End</h4>
-                    <p className="">HTML5 / CSS3</p>
-                    <p className="">React.js / Redux</p>
-                    <p className="">jQuery</p>
-                    <p className="">Bootstrap</p>
+                    <h4>Front-End</h4>
+                    <p>HTML5 / CSS3</p>
+                    <p>React.js / Redux</p>
+                    <p>jQuery</p>
+                    <p>Bootstrap</p>
                 </div>
                 <div className="col m6 offset-l3 l2">
-                    <h4 className="">Back-End</h4>
-                    <p className="">Node.js / Express.js</p>
-                    <p className="">Socket.IO</p>
-                    <p className="">Symfony5</p>
-                    <p className="">Laravel</p>
-                    <p className="">MongoDB</p>
-                    <p className="">MySQL</p>
+                    <h4>Back-End</h4>
+                    <p>Node.js / Express.js</p>
+                    <p>mongoose</p>
+                    <p>Socket.IO</p>
+                    <p>Symfony5</p>
+                    <p>Laravel</p>
+                    <p>MongoDB</p>
+                    <p>MySQL</p>
                 </div>
                 <div className="col m6 offset-l3 l2">
                     <h4 className="">Autres</h4>

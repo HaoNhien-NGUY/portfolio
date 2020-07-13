@@ -30,7 +30,7 @@ function Accueil() {
                 <div className="col l8 m12 offset-l2 main-frame">
                     <animated.h1 className="position-relative" style={enterPageH1}>NGUYEN<br></br> Hao-Nhien</animated.h1>
                     <animated.h3 className="position-relative" style={enterPageH3}>Développeur Web Full Stack.</animated.h3>
-                    <animated.p className="flow-text bio position-relative" style={enterPageP}>Bonjour, je suis etudiant au Samsung Campus où j'apprends le développement web. Curieux, j'aime apprendre et découvrir de nouvelles technologies.</animated.p>
+                    <animated.p className="flow-text bio position-relative" style={enterPageP}>Bonjour, je suis étudiant au Samsung Campus où j'apprends le développement web. Curieux, j'aime découvrir et apprendre de nouvelles technologies.</animated.p>
                     <animated.div className="socials" style={enterPageSocials}>
                         <animated.a href="https://github.com/HaoNhien-NGUY" target="_blanc" rel="noopener noreferrer"
                             onMouseEnter={() => setGithubHover({ top: "-5px" })}

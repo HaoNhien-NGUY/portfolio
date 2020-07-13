@@ -1,21 +1,43 @@
+.container.contact {
+    position: relative;
+}
+
+@media screen and (min-width: 992px) {
+    .container.contact {
+        padding-bottom: 8rem;
+    }
+}
+
+@media screen and (max-width: 732px) {
+    .contact .title {
+        font-size: 1.6rem;
+    }
+    .contact h4 {
+        font-size: 1.6rem;
+    }
+    .contact h5 {
+        font-size: 1.4rem;
+    }
+}
+
 .contact .title {
     margin-bottom: 6rem;
     color: black;
 }
 
-.contact h4{
+.contact h5 {
     margin-top: 3rem;
 }
 
-.contact h3 {
+.contact h4 {
     margin-top: 0;
     color: #72BBFF;
 }
 
-.contact h3 a {
+.contact h4 a {
     color: #72BBFF;
 }
 
-.contact h3 a:hover {
+.contact h4 a:hover {
     text-decoration: underline;
 }

@@ -23,6 +23,8 @@ function Projets() {
             keyboard: {
                 enabled: true,
             },
+            resistanceRatio: 0.5,
+            threshold: 25,
             centeredSlides: true,
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
             breakpoints: {

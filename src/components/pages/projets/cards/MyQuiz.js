@@ -16,7 +16,7 @@ function MyQuiz() {
         <>
             <animated.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform, zIndex: +!flipped }} >
                 <div className="card-content">
-                    <h5>my quiz</h5>
+                    <h5>HAQuiz</h5>
                     <h4>Site de quiz</h4>
                     <div className="container-img">
                         <div className="image-wrapper">

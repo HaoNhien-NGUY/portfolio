@@ -20,8 +20,7 @@ function App() {
     <>
       <Navigation inView={inView} entry={entry} pageAnchor={pageAnchor} />
       <ReactFullpage
-        // navigation={true}
-        // scrollBar={true}
+        licenseKey={'DB6FE5D8-6A044159-A60DB1D0-81FF64DE'}
         scrollOverflow={true}
         anchors={['accueil', 'competences', 'projets', 'contact']}
         onLeave={(origin, destination, direction) => setPageAnchor({ origin: origin.anchor, destination: destination.anchor })}
