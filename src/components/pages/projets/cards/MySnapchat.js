@@ -31,7 +31,7 @@ function MySnapchat() {
                     <p>Reproduction des fonctionnalité de Snapchat en utilisant l'API fournie par EPITECH.</p>
                     <div className="links-projects">
                         <div>
-                            <a href="http://our-snapchat.surge.sh/" target="_blank" className="button external-link">Démo</a>
+                            <a href="http://our-snapchat.surge.sh/" target="_blank" rel="noopener noreferrer" className="button external-link">Démo</a>
                             <a href="https://github.com/HaoNhien-NGUY/my_snapchat/tree/master/my_snapchat" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" className="button gitcode">{'<'} Code {'/>'}</a>
                         </div>
                         <div className="show-details" onClick={() => set(state => !state)} >Détails <i className="small material-icons">arrow_forward</i></div>

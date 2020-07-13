@@ -23,7 +23,7 @@ function Projets() {
             keyboard: {
                 enabled: true,
             },
-            resistanceRatio: 0.5,
+            resistanceRatio: 0.7,
             threshold: 25,
             centeredSlides: true,
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
