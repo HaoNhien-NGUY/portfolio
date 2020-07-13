@@ -101,3 +101,26 @@
 .nav-items.navbar-small li:not(:last-of-type) {
     margin-right: 50px;
 }
+
+.nav-socials {
+    display: flex;
+}
+
+.nav-socials img {
+    width: 32px;
+    margin: 4px 15px 0 15px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.nav-socials img:hover {
+    opacity: 1;
+}
+
+.nav-socials .imgs {
+    opacity: 0;
+    right: -200px;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+}
