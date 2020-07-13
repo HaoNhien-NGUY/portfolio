@@ -8,7 +8,7 @@ function Contact() {
             <h5 className="center-align">Email</h5>
             <h4 className="center-align"><a href="mailto:hao-nhien.nguyen@epitech.eu">hao-nhien.nguyen@epitech.eu</a></h4>
             <h5 className="center-align">LinkedIn</h5>
-            <h4 className="center-align"><a href="https://www.linkedin.com/in/hao-nhien-nguyen" target="_blank" rel="noopener noreferrer">linkedin.com/in/hao-nhien-nguyen</a></h4>
+            <h4 className="center-align"><a href="https://www.linkedin.com/in/haonhien-nguyen" target="_blank" rel="noopener noreferrer">linkedin.com/in/haonhien-nguyen</a></h4>
         </div>
     )
 }
