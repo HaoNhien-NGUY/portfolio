@@ -4,11 +4,11 @@ import './competences.css';
 function Competences() {
     return (
         <div className="container competences">
-            <h3>Formation</h3>
+            <h4>Formation</h4>
             <div className="row cards z-depth-1">
                 <div className="col l6 m12 formation" style={{ paddingRight: "25px" }}>
                     <p style={{ fontSize: "1.3rem", color: "#333" }}><b>Samsung Campus - EPITECH</b> &nbsp;&nbsp;|&nbsp;&nbsp; 2019 - 2021<br></br>Intégrateur - Développeur Web Full Stack</p>
-                    <p>La pédagogie par projet m'a appris à travailler en autonomie et m'a donnée confiance en mes capacités d'apprentissages.</p>
+                    <p>Travailler sur des projets ciblés m'a permis de développer de nouvelles compétences, et une capacité d'adaptation rapide.</p>
                     <br></br>
                 </div>
                 <div className="col l6 m12 recherche">
@@ -16,7 +16,7 @@ function Competences() {
                     <p>Du<b> 2 novembre 2020</b> au <b>29 octobre 2021</b> au rythme de <br></br><b>3 semaines en entreprises / 1 semaine en formation.</b></p>
                 </div>
             </div>
-            <h3 className=""style={{marginTop: "3.8rem"}}>Compétences</h3>
+            <h4 className=""style={{marginTop: "3.8rem"}}>Compétences</h4>
             <div className="row  skills">
                 <div className="col m6 offset-l0 l2">
                     <h4>Front-End</h4>

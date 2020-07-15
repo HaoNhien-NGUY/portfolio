@@ -25,10 +25,12 @@
 .competences .skills h4 {
     color: #72BBFF;
     margin-bottom: 1.5rem;
+    font-weight: normal;
 }
 
-.competences h3 {
+.competences h4 {
     color: #333;
+    font-weight: bold;
 }
 
 .competences .recherche {
