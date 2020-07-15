@@ -3,7 +3,7 @@ import { useSpring, animated, config } from 'react-spring';
 
 import './contact.css';
 
-const from = { opacity: 0, top: "35px", transform: "scale(0.95)" };
+const from = { opacity: 0, top: "20px", transform: "scale(0.9)" };
 const to = { opacity: 1, top: "0px", transform: "scale(1)" }
 
 function Contact(props) {

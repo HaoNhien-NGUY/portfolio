@@ -11,15 +11,15 @@ const toFrom = {
     to: { opacity: 1, top: "0px" },
     from: { opacity: 0, top: "35px" }
 };
-const conf = config.slow;
+const conf = config.molasses;
 const socialsConfig = {tension: 250, friction: 20};
 
 function Accueil() {
 
     const enterPageH1 = useSpring({ ...toFrom, config: conf, delay: 400 });
-    const enterPageH3 = useSpring({ ...toFrom, config: conf, delay: 800 });
-    const enterPageP = useSpring({ ...toFrom, config: conf, delay: 1200 });
-    const enterPageSocials = useSpring({ to: { opacity: 1, bottom: "-3.8rem" }, from: { opacity: 0, bottom: "-5.8rem" }, config: conf, delay: 1200 });
+    const enterPageH3 = useSpring({ ...toFrom, config: conf, delay: 700 });
+    const enterPageP = useSpring({ ...toFrom, config: conf, delay: 1000 });
+    const enterPageSocials = useSpring({ to: { opacity: 1, bottom: "-3.8rem" }, from: { opacity: 0, bottom: "-5.8rem" }, config: conf, delay: 1000 });
     const [githubHover, setGithubHover] = useSpring(() => ({ top: "0px", config: socialsConfig } ));
     const [linkedInHover, setLinkedInHover] = useSpring(() => ({ top: "0px", config: socialsConfig }));
     const [cvHover, setCvHover] = useSpring(() => ({ top: "0px", config: socialsConfig }));

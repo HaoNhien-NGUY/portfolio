@@ -2,6 +2,10 @@
     padding-top: 2.5rem;
 }
 
+.competences .wrap {
+    position: relative;
+}
+
 .competences .formation p {
     color: #555;
     font-size: 1.2rem;

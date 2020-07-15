@@ -3,8 +3,8 @@ import { useSpring, animated, config } from 'react-spring';
 
 import './competences.css';
 
-const from = { opacity: 0, top: "35px", transform: "scale(0.95)" };
-const to = { opacity: 1, top: "0px", transform: "scale(1)" };
+const from = { opacity: 0, top: "45px" };
+const to = { opacity: 1, top: "0px" };
 
 function Competences(props) {
 
@@ -16,15 +16,15 @@ function Competences(props) {
 
     useEffect(() => {
         if (firstTime.current && pageAnchor.destination == "competences") {
-            setFirstProps({ ...to, delay: 200 });
-            setSecondProps({ ...to, delay: 400 });
+            setFirstProps({ ...to, delay: 400 });
+            setSecondProps({ ...to, delay: 700 });
             firstTime.current = false;
         }
     }, [pageAnchor])
 
     return (
         <div className="container competences">
-            <animated.div style={firstProps}>
+            <animated.div className="wrap" style={firstProps}>
                 <h4>Formation</h4>
                 <div className="row cards z-depth-1">
                     <div className="col l6 m12 formation" style={{ paddingRight: "25px" }}>
@@ -38,7 +38,7 @@ function Competences(props) {
                     </div>
                 </div>
             </animated.div>
-            <animated.div style={secondProps}>
+            <animated.div className="wrap" style={secondProps}>
                 <h4 className="" style={{ marginTop: "3.8rem" }}>Compétences</h4>
                 <div className="row  skills">
                     <div className="col m6 offset-l0 l2">
