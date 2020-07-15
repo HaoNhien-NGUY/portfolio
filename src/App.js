@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
-import { useInView } from 'react-intersection-observer';
 import ReactFullpage from '@fullpage/react-fullpage';
 import developImg from './assets/develop-arrow.png';
 
@@ -11,14 +10,11 @@ import Projets from './components/pages/projets/Projets';
 import Contact from './components/pages/contact/Contact';
 
 function App() {
-  const [test, inView, entry] = useInView({
-    threshold: 0.6,
-  });
   const [pageAnchor, setPageAnchor] = useState({ origin: 'accueil', destination: 'accueil' });
 
   return (
     <>
-      <Navigation inView={inView} entry={entry} pageAnchor={pageAnchor} />
+      <Navigation pageAnchor={pageAnchor} />
       <ReactFullpage
         licenseKey={'DB6FE5D8-6A044159-A60DB1D0-81FF64DE'}
         scrollOverflow={true}
@@ -28,18 +24,18 @@ function App() {
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className="section" id="section-1" ref={test}>
+              <div className="section" id="section-1">
                 <Accueil />
                 <img src={developImg} id="more" onClick={() => fullpageApi.moveSectionDown()}></img>
               </div>
               <div className="section" id="section-2">
-                <Competences />
+                <Competences pageAnchor={pageAnchor}/>
               </div>
               <div className="section" id="section-3">
-                <Projets />
+                <Projets pageAnchor={pageAnchor} />
               </div>
               <div className="section" id="section-4">
-                <Contact />
+                <Contact pageAnchor={pageAnchor} />
               </div>
             </ReactFullpage.Wrapper>
           );

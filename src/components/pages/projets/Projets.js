@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Swiper, { Pagination, Keyboard, Navigation } from 'swiper';
 import { useSpring, animated, config } from 'react-spring';
 
@@ -11,8 +11,20 @@ import Puissance4 from './cards/Puissance4';
 import MySnapchat from './cards/MySnapchat';
 import MyQuiz from './cards/MyQuiz'
 
-function Projets() {
-    const [eCommerceHover, setECommerceHover] = useSpring(() => ({ transform: "scale(1)", config: config.default }));
+function Projets(props) {
+    const { pageAnchor } = props;
+    const firstTime = useRef(true);
+
+    // const [eCommerceHover, setECommerceHover] = useSpring(() => ({ transform: "scale(1)", config: config.default }));
+    const [slideIn, setSlideIn] = useSpring(() => ({ right: "-80vw", config: { tension: 100 } }));
+
+    useEffect(() => {
+        if(firstTime.current && pageAnchor.destination == "projets") {
+            setSlideIn({right: "0vw", delay: 200});
+            firstTime.current = false;
+        }
+    }, [pageAnchor])
+
 
     useEffect(() => {
         Swiper.use([Pagination, Keyboard, Navigation]);
@@ -49,12 +61,13 @@ function Projets() {
             </div>
             <div className="row">
                 <div className="swiper-container">
-                    <div className="swiper-wrapper">
+                    <animated.div className="swiper-wrapper" style={slideIn}>
                         <div className="swiper-slide project-card ecommerce"
-                        // onClick={() => setECommerceHover({ transform: "scale(1.3)" })}
+                        // onMouseEnter={() => setECommerceHover({ transform: "scale(1.05)" })}
                         // onMouseLeave={() => setECommerceHover({ transform: "scale(1)" })}
-                        style={eCommerceHover} >
-                            <Ecommerce set={setECommerceHover}/>
+                        // style={eCommerceHover} 
+                        >
+                            <Ecommerce />
                         </div>
                         <div className="swiper-slide project-card">
                             <MyIrc />
@@ -68,7 +81,7 @@ function Projets() {
                         <div className="swiper-slide project-card">
                             <Puissance4 />
                         </div>
-                    </div>
+                    </animated.div>
 
                     <div className="carousel-nav hide-on-med-and-down">
                         <div className="swiper-button-prev"></div>
