@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.93b273fe.chunk.css",
+    "main.css": "/static/css/main.fd29a661.chunk.css",
     "main.js": "/static/js/main.110c15a7.chunk.js",
     "main.js.map": "/static/js/main.110c15a7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
@@ -9,10 +9,10 @@
     "static/js/2.d4c299e8.chunk.js": "/static/js/2.d4c299e8.chunk.js",
     "static/js/2.d4c299e8.chunk.js.map": "/static/js/2.d4c299e8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.52ec4b214a662343f1f09ad913206d82.js": "/precache-manifest.52ec4b214a662343f1f09ad913206d82.js",
+    "precache-manifest.32e84d2495cfbf30143f913b89c8b8cb.js": "/precache-manifest.32e84d2495cfbf30143f913b89c8b8cb.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.1233a5ec.chunk.css.map": "/static/css/2.1233a5ec.chunk.css.map",
-    "static/css/main.93b273fe.chunk.css.map": "/static/css/main.93b273fe.chunk.css.map",
+    "static/css/main.fd29a661.chunk.css.map": "/static/css/main.fd29a661.chunk.css.map",
     "static/js/2.d4c299e8.chunk.js.LICENSE.txt": "/static/js/2.d4c299e8.chunk.js.LICENSE.txt",
     "static/media/CV_HaoNhien-NGUYEN.pdf": "/static/media/CV_HaoNhien-NGUYEN.db7df9ec.pdf",
     "static/media/curriculum-vitae.png": "/static/media/curriculum-vitae.9f4b76f4.png",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.19ccc7f6.js",
     "static/css/2.1233a5ec.chunk.css",
     "static/js/2.d4c299e8.chunk.js",
-    "static/css/main.93b273fe.chunk.css",
+    "static/css/main.fd29a661.chunk.css",
     "static/js/main.110c15a7.chunk.js"
   ]
 }
