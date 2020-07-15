@@ -16,11 +16,11 @@ function Mern() {
         <>
             <animated.div className="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform, zIndex: +!flipped }} >
                 <div className="card-content">
-                    <h5>my snapchat</h5>
-                    <h4>Imitation de Snapchat</h4>
+                    <h5>Psicine MERN</h5>
+                    <h4>Initiation stack MERN</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={mysnapchat1}></img>
+                            <img data-src={mysnapchat1} alt="MERN-screenshot"></img>
                         </div>
                     </div>
                     <div className="technos row">

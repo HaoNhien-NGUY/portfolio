@@ -20,7 +20,7 @@ function MySnapchat() {
                     <h4>Imitation de Snapchat</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={mysnapchat1}></img>
+                            <img data-src={mysnapchat1} alt="mysnap-screenshot"></img>
                         </div>
                     </div>
                     <div className="technos row">

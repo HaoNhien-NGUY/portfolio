@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import developImg from './assets/develop-arrow.png';
@@ -26,7 +26,7 @@ function App() {
             <ReactFullpage.Wrapper>
               <div className="section" id="section-1">
                 <Accueil />
-                <img src={developImg} id="more" onClick={() => fullpageApi.moveSectionDown()}></img>
+                <img src={developImg} id="more" onClick={() => fullpageApi.moveSectionDown()} alt="down-arrow"></img>
               </div>
               <div className="section" id="section-2">
                 <Competences pageAnchor={pageAnchor}/>

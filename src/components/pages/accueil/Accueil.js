@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import { useSpring, animated, config } from 'react-spring';
 
 import githubImg from '../../../assets/GitHub-Mark-64px.png';
@@ -11,7 +11,7 @@ const toFrom = {
     to: { opacity: 1, top: "0px" },
     from: { opacity: 0, top: "35px" }
 };
-const conf = config.molasses;
+const conf = config.slow;
 const socialsConfig = {tension: 250, friction: 20};
 
 function Accueil() {

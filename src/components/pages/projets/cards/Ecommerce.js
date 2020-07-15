@@ -20,7 +20,7 @@ function Ecommerce() {
                     <h4>Projet E-commerce</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={img1}></img>
+                            <img data-src={img1} alt="ecommerce-screenshot"></img>
                         </div>
                     </div>
                     <div className="technos row">

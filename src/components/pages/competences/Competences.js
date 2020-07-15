@@ -12,12 +12,10 @@ function Competences(props) {
     const firstTime = useRef(true);
 
     const [firstProps, setFirstProps] = useSpring(() => ({ ...from, config: config.slow }));
-    const [secondProps, setSecondProps] = useSpring(() => ({ ...from, config: config.slow }));
 
     useEffect(() => {
         if (firstTime.current && pageAnchor.destination == "competences") {
             setFirstProps({ ...to, delay: 400 });
-            setSecondProps({ ...to, delay: 700 });
             firstTime.current = false;
         }
     }, [pageAnchor])
@@ -29,7 +27,7 @@ function Competences(props) {
                 <div className="row cards z-depth-1">
                     <div className="col l6 m12 formation" style={{ paddingRight: "25px" }}>
                         <p style={{ fontSize: "1.3rem", color: "#333" }}><b>Samsung Campus - EPITECH</b> &nbsp;&nbsp;|&nbsp;&nbsp; 2019 - 2021<br></br>Intégrateur - Développeur Web Full Stack</p>
-                        <p>Travailler sur des projets ciblés m'a permis de développer de nouvelles compétences, et une capacité d'adaptation rapide.</p>
+                        <p>Travailler sur des projets ciblés m'a permis de développer de nouvelles compétences et une capacité d'adaptation rapide.</p>
                         <br></br>
                     </div>
                     <div className="col l6 m12 recherche">
@@ -38,7 +36,7 @@ function Competences(props) {
                     </div>
                 </div>
             </animated.div>
-            <animated.div className="wrap" style={secondProps}>
+            <animated.div className="wrap" style={firstProps}>
                 <h4 className="" style={{ marginTop: "3.8rem" }}>Compétences</h4>
                 <div className="row  skills">
                     <div className="col m6 offset-l0 l2">
