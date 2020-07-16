@@ -55,10 +55,6 @@
     color: #504ec7;
 }
 
-.links-projects .show-details:hover i {
-    animation-play-state: paused;
-}
-
 .links-projects .show-details i {
     margin-left: 6px;
     position: relative;
