@@ -55,21 +55,8 @@
     color: #504ec7;
 }
 
-.links-projects .show-details:after {
-    content: "";
-    bottom: -3px;
-    content: "";
-    display: block;
-    height: 3px;
-    position: absolute;
-    background: #504ec700;
-    transition: background 0.2s, width 0.2s;
-    width: 50%;
-}
-
-.links-projects .show-details:hover:after {
-    width: 100%;
-    background: #504ec7;
+.links-projects .show-details:hover i {
+    animation-play-state: paused;
 }
 
 .links-projects .show-details i {

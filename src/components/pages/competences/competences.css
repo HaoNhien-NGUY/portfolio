@@ -51,7 +51,7 @@
     .competences .formation:after {
         content: "";
         position: absolute;
-        background: #333;
+        background: #72BBFF;
         width: 2px;
         height: 75%;
         top: 50%;

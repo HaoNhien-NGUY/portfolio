@@ -29,7 +29,7 @@
 }
 
 .project-card:hover .show-details i {
-    animation: moveLeftRight 1.3s infinite linear;
+    animation: moveLeftRight 1.5s infinite linear;
 }
 
 @keyframes moveLeftRight {

@@ -54,9 +54,9 @@ function Navigation(props) {
                 </animated.div>
                 <div className="nav-socials noselect">
                     <animated.div className="imgs" style={socialAppear}>
-                        <a href="https://github.com/HaoNhien-NGUY"><img src={gitHubImg}></img></a>
-                        <a href="https://www.linkedin.com/in/haonhien-nguyen/" target="_blanc" rel="noopener noreferrer"><img src={linkedInImg}></img></a>
-                        <a href={cvPdf} target="_blanc" rel="noopener noreferrer"><img src={cvImg}></img></a>
+                        <a href="https://github.com/HaoNhien-NGUY"><img src={gitHubImg} alt="github-logo"></img></a>
+                        <a href="https://www.linkedin.com/in/haonhien-nguyen/" target="_blanc" rel="noopener noreferrer"><img src={linkedInImg} alt="linkedin-logo"></img></a>
+                        <a href={cvPdf} target="_blanc" rel="noopener noreferrer"><img src={cvImg} alt="cv-img"></img></a>
                     </animated.div>
                 </div>
             </animated.div>
