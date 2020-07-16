@@ -31,7 +31,7 @@ function Competences(props) {
                         <br></br>
                     </div>
                     <div className="col l6 m12 recherche">
-                        <p>En recherche d'une <b>alternance</b> en contrat de professionnalisation.</p>
+                        <p>Actuellement en recherche d'une <b>alternance</b>.</p>
                         <p>Du<b> 2 novembre 2020</b> au <b>29 octobre 2021</b> au rythme de <br></br><b>3 semaines en entreprises / 1 semaine en formation.</b></p>
                     </div>
                 </div>
