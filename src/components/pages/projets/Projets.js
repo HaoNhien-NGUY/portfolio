@@ -16,11 +16,11 @@ function Projets(props) {
     const firstTime = useRef(true);
 
     // const [eCommerceHover, setECommerceHover] = useSpring(() => ({ transform: "scale(1)", config: config.default }));
-    const [slideIn, setSlideIn] = useSpring(() => ({ right: "-80vw", config: { tension: 100 } }));
+    const [slideIn, setSlideIn] = useSpring(() => ({ right: "-100vw", opacity: 0, config: { tension: 90 } }));
 
     useEffect(() => {
         if(firstTime.current && pageAnchor.destination == "projets") {
-            setSlideIn({right: "0vw", delay: 200});
+            setSlideIn({right: "0vw", opacity: 1, delay: 100});
             firstTime.current = false;
         }
     }, [pageAnchor])
@@ -60,7 +60,7 @@ function Projets(props) {
                 </div>
             </div>
             <div className="row">
-                <div className="swiper-container">
+                <div className="swiper-container" >
                     <animated.div className="swiper-wrapper" style={slideIn}>
                         <div className="swiper-slide project-card ecommerce"
                         // onMouseEnter={() => setECommerceHover({ transform: "scale(1.05)" })}
