@@ -20,7 +20,7 @@ function MyQuiz() {
                     <h4>Site de quiz</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={myquizImg} alt="haoquiz-screenshot"></img>
+                            <img src={myquizImg} alt="haoquiz-screenshot"></img>
                         </div>
                     </div>
                     <div className="technos row">

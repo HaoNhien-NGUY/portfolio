@@ -16,11 +16,11 @@ function Projets(props) {
     const firstTime = useRef(true);
 
     // const [eCommerceHover, setECommerceHover] = useSpring(() => ({ transform: "scale(1)", config: config.default }));
-    const [slideIn, setSlideIn] = useSpring(() => ({ right: "-100vw", opacity: 0, config: { tension: 90 } }));
+    const [slideIn, setSlideIn] = useSpring(() => ({ right: "-150vw", opacity: 1, config: { tension: 160, friction: 48 } }));
 
     useEffect(() => {
         if(firstTime.current && pageAnchor.destination == "projets") {
-            setSlideIn({right: "0vw", opacity: 1, delay: 100});
+            setSlideIn({right: "0vw", opacity: 1, delay: 150});
             firstTime.current = false;
         }
     }, [pageAnchor])

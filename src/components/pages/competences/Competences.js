@@ -3,7 +3,7 @@ import { useSpring, animated, config } from 'react-spring';
 
 import './competences.css';
 
-const from = { opacity: 0, top: "45px" };
+const from = { opacity: 0, top: "35px" };
 const to = { opacity: 1, top: "0px" };
 
 function Competences(props) {
@@ -11,7 +11,7 @@ function Competences(props) {
     const { pageAnchor } = props;
     const firstTime = useRef(true);
 
-    const [firstProps, setFirstProps] = useSpring(() => ({ ...from, config: config.slow }));
+    const [firstProps, setFirstProps] = useSpring(() => ({ ...from, config: config.default }));
 
     useEffect(() => {
         if (firstTime.current && pageAnchor.destination == "competences") {

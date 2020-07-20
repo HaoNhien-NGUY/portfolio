@@ -18,7 +18,7 @@ function Navigation(props) {
 
     const [socialAppear, setSocialAppear] = useSpring(() => ({ opacity: 0, right: "-200px", config: { ...config.default } }));
     const [{fontSize, height, padding, left, transform, color, marginRight}, setSmallNav] = useSpring(() => ({
-         ...wrapperProps, ...navItemsProps, color: "#555", marginRight:"90px", config: {friction: 28, tension:195}
+         ...wrapperProps, ...navItemsProps, color: "#555", marginRight:"90px", config: {friction: 28, tension:165}
         }));
 
     useEffect(() => {

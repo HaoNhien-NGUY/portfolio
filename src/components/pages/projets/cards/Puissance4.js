@@ -20,7 +20,7 @@ function Puissance4() {
                     <h4>Jeu du Puissance 4</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={puissance4Img} alt="puissance4-screenshot"></img>
+                            <img src={puissance4Img} alt="puissance4-screenshot"></img>
                         </div>
                     </div>
                     <div className="technos row">

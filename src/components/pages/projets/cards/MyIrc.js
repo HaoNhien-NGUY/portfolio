@@ -20,7 +20,7 @@ function MyIrc() {
                     <h4>Serveur de chat IRC</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={myirc1} alt="myirc-screenshot"></img>
+                            <img src={myirc1} alt="myirc-screenshot"></img>
                         </div>
                     </div>
                     <div className="technos row">

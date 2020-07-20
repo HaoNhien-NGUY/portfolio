@@ -20,7 +20,7 @@ function Mern() {
                     <h4>Initiation stack MERN</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={mysnapchat1} alt="MERN-screenshot"></img>
+                            <img src={mysnapchat1} alt="MERN-screenshot"></img>
                         </div>
                     </div>
                     <div className="technos row">

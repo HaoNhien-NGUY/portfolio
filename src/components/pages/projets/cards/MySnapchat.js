@@ -20,7 +20,7 @@ function MySnapchat() {
                     <h4>Imitation de Snapchat</h4>
                     <div className="container-img">
                         <div className="image-wrapper">
-                            <img data-src={mysnapchat1} alt="mysnap-screenshot"></img>
+                            <img src={mysnapchat1} alt="mysnap-screenshot"></img>
                         </div>
                     </div>
                     <div className="technos row">
@@ -46,7 +46,7 @@ function MySnapchat() {
                         <h5>Imitation de Snapchat</h5>
                         <p>Login: <b>forsen@forsen.ee</b> - Password: <b>forsen</b></p>
                         <p>Envoie d'images à d'autres utilisateurs pour un laps de temps, qui seront supprimés par la suite.</p>
-                        <p>Utilisation d'une API externe. <br></br>Le site a été réalisé pour être mobile first</p>
+                        <p>Utilisation d'une API externe. <br></br>Le site a été réalisé pour être mobile first.</p>
                     </div>
                     <div className="links-projects">
                         <div className="show-front" onClick={() => set(state => !state)} ><i className="small material-icons">arrow_back</i> Retour</div>
