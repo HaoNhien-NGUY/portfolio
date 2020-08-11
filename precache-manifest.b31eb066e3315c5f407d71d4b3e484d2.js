@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11383ca7879e49d644434eaeedbee14d",
+    "revision": "c75027d9c0013b11c18a73ddf7816d2b",
     "url": "/index.html"
   },
   {
-    "revision": "54e2d76c57c775cae032",
+    "revision": "8d729f77d27172d282e7",
     "url": "/static/css/2.1233a5ec.chunk.css"
   },
   {
-    "revision": "a9f78bcc67ff8c064613",
-    "url": "/static/css/main.249c495f.chunk.css"
+    "revision": "208256d3ed2610be5b72",
+    "url": "/static/css/main.291a7b88.chunk.css"
   },
   {
-    "revision": "54e2d76c57c775cae032",
-    "url": "/static/js/2.2149f35c.chunk.js"
+    "revision": "8d729f77d27172d282e7",
+    "url": "/static/js/2.42f8f27e.chunk.js"
   },
   {
     "revision": "7918f9b893310890f0a444ed75c67550",
-    "url": "/static/js/2.2149f35c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.42f8f27e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9f78bcc67ff8c064613",
-    "url": "/static/js/main.c586910a.chunk.js"
+    "revision": "208256d3ed2610be5b72",
+    "url": "/static/js/main.e10177e1.chunk.js"
   },
   {
     "revision": "4f2b1704eab49d50853b",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "18d132c9f6e714266c3932ae3a4829b5",
     "url": "/static/media/external-link.18d132c9.ico"
+  },
+  {
+    "revision": "a4e1b5356fbea066ab84c5c6f4ffff5e",
+    "url": "/static/media/logo-campus.a4e1b535.png"
   },
   {
     "revision": "79ae3534d68fb23a40952337e0ef9a82",
