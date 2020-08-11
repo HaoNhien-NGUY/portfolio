@@ -13,19 +13,20 @@
 .links-projects .button {
     font-size: 1.3rem;
     color: white;
-    background-color: #504ec7;
+    /* background-color: #504ec7; */
+    background-color: #333;
     padding: 6px 13px;
     cursor: pointer;
     border-radius: 2px;
-    border: solid 1px #504ec7;
-    transition: color 0.3s, background-color 0.3s;
+    /* border: solid 1px #504ec7; */
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
     position: relative;
 }
 
 .links-projects .button:hover {
-    background-color: #252466;
+    background-color: rgb(141, 141, 141);
     color: white;
-    border-color: #252466;
+    border-color: rgb(141, 141, 141);
 }
 
 .links-projects .show-details, .links-projects .show-front {
@@ -34,15 +35,17 @@
 }
 
 .links-projects .button.gitcode {
-    border: solid 1px #504ec7;
+    /* border: solid 1px #504ec7; */
+    border: solid 1px black;
     background-color: white;
-    color: #504ec7;
+    /* color: #504ec7; */
+    color: black;
 }
 
 .links-projects .button.gitcode:hover {
-    color: white;
-    border-color: #252466;
-    background-color: #252466;
+    color: rgb(141, 141, 141);
+    border-color: rgb(141, 141, 141);
+    /* background-color: #252466; */
 }
 
 .links-projects .button:not(:last-of-type) {
@@ -52,7 +55,7 @@
 .links-projects .show-details {
     position: relative;
     display: flex;
-    color: #504ec7;
+    color: #333;
 }
 
 .links-projects .show-details i {
@@ -81,13 +84,15 @@
 }
 
 .card-content h5 {
-    color: #504ec7;
+    /* color: #504ec7; */
+    color: #555;
     margin-top: 0;
     padding-top: 16px;
 }
 
 .card-content h4 {
-    color: #373699;
+    /* color: #373699; */
+    color: #333;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0.3rem;
@@ -125,13 +130,14 @@
     /* margin-top: 4.2rem; */
     margin-bottom: 1.7rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card-content .technos span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: solid 1px rgb(34, 34, 34);
     padding: 4px 10px;
-    border-radius: 0.3rem;
+    border-radius: 3px;
     background-color: white;
     color: rgb(34, 34, 34);
     display: inline-block;

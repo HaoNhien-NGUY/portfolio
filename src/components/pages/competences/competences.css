@@ -47,6 +47,13 @@
     color: #333;
 }
 
+.competences .logo-samsung {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
 @media screen and (min-width: 992px) {
     .competences .formation:after {
         content: "";
@@ -58,13 +65,11 @@
         transform: translateY(-50%);
         right: 0.8rem;
     }
-}
 
-/* @media screen and (min-width: 992px) {
     .competences .recherche {
-        transform: translateY(120%);
+        margin-top: 4%;
     }
-} */
+}
 
 .competences .cards {
     background-color: white;

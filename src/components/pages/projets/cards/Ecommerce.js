@@ -44,6 +44,7 @@ function Ecommerce() {
                     <div className="card-description">
                         <p style={{ marginTop: 0, paddingTop: "1.5rem" }}>Réalisé du 01 juin 2020 au 29 juin 2020</p>
                         <h5>Projet E-commerce</h5>
+                        <p>Login: <b>admin@admin.fr</b><br></br>Password: <b>admin</b></p>
                         <p>Réalisé en groupe de 8 en utilisant la methodologie Agile et GitLab.</p>
                         <p>J'ai participé à la conception de l'API REST avec Symfony5 en back, à la mise en place de la base de donnée MySQL ainsi qu'à l'implementation de l'authentification avec Google OAuth.</p>
                         <p>#1 Victoire compétition Marketing décernée par l’ESSEC Business School (<a href="https://www.linkedin.com/feed/update/urn:li:activity:6685934491401256960/" target="_blank" rel="noopener noreferrer">Annoncée sur Linkedin</a>)</p>

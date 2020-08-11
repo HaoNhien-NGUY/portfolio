@@ -44,7 +44,7 @@ function MySnapchat() {
                     <div className="card-description">
                         <p style={{ marginTop: 0, paddingTop: "1.5rem" }}>Réalisé du 25 mai 2020 au 31 mai 2020</p>
                         <h5>Imitation de Snapchat</h5>
-                        <p>Login: <b>forsen@forsen.ee</b> - Password: <b>forsen</b></p>
+                        <p>Login: <b>forsen@forsen.ee</b><br></br>Password: <b>forsen</b></p>
                         <p>Envoie d'images à d'autres utilisateurs pour un laps de temps, qui seront supprimés par la suite.</p>
                         <p>Utilisation d'une API externe. <br></br>Le site a été réalisé pour être mobile first.</p>
                     </div>

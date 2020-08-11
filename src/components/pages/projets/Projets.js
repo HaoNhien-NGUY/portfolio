@@ -16,11 +16,11 @@ function Projets(props) {
     const firstTime = useRef(true);
 
     // const [eCommerceHover, setECommerceHover] = useSpring(() => ({ transform: "scale(1)", config: config.default }));
-    const [slideIn, setSlideIn] = useSpring(() => ({ right: "-150vw", opacity: 1, config: { tension: 160, friction: 48 } }));
+    const [slideIn, setSlideIn] = useSpring(() => ({ right: "-40vw", opacity: 0,  config: {...config.slow, friction: 88} })); //{ tension: 160, friction: 48 }
 
     useEffect(() => {
         if(firstTime.current && pageAnchor.destination == "projets") {
-            setSlideIn({right: "0vw", opacity: 1, delay: 150});
+            setSlideIn({right: "0vw", opacity: 1, delay: 250});
             firstTime.current = false;
         }
     }, [pageAnchor])
@@ -43,7 +43,7 @@ function Projets(props) {
                 640: { slidesPerView: 2, spaceBetween: 30 },
                 992: { slidesPerView: 2, spaceBetween: 40 },
                 1250: { slidesPerView: 3, spaceBetween: 40 },
-                1600: { slidesPerView: 4, spaceBetween: 60 },
+                1600: { slidesPerView: 4, spaceBetween: 50 },
             }
         });
 
@@ -55,7 +55,7 @@ function Projets(props) {
                 <div className="row">
                     <div className="col xl6 l9 m12">
                         <h4><span>Quelques projets</span></h4>
-                        <p>Toujours en plein apprentissage, voici une selection de projets realisés au cours de mes 7 premiers mois au Samsung Campus.</p>
+                        <p>Toujours en plein apprentissage, voici une sélection de projets réalisés au cours de mes 7 premiers mois au Samsung Campus.</p>
                     </div>
                 </div>
             </div>

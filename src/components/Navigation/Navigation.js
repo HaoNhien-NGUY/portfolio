@@ -18,17 +18,17 @@ function Navigation(props) {
 
     const [socialAppear, setSocialAppear] = useSpring(() => ({ opacity: 0, right: "-200px", config: { ...config.default } }));
     const [{fontSize, height, padding, left, transform, color, marginRight}, setSmallNav] = useSpring(() => ({
-         ...wrapperProps, ...navItemsProps, color: "#555", marginRight:"90px", config: {friction: 28, tension:165}
+         ...wrapperProps, ...navItemsProps, color: "#555", marginRight:"90px", config: config.default
         }));
 
     useEffect(() => {
         setActiveLi(pageAnchor.destination);
         if (pageAnchor.origin === 'accueil' && pageAnchor.destination !== 'accueil') {
-            setSmallNav({ fontSize: "1.4rem", height: "3.5rem", padding: "0.5rem 0rem 2.5rem 0rem", left: "1.5%", transform: "translateX(0)", color: "#333", marginRight:"50px", delay: 100 });
+            setSmallNav({ fontSize: "1.4rem", height: "3.5rem", padding: "0.5rem 0rem 2.5rem 0rem", left: "1.5%", transform: "translateX(0)", color: "#333", marginRight:"50px", delay: 0 });
             setSocialAppear({ opacity: 1, right: "0px", delay: 300 });
         }
         if (pageAnchor.origin !== 'accueil' && pageAnchor.destination === 'accueil') {
-            setSmallNav({ ...wrapperProps, ...navItemsProps, color: "#555", marginRight:"90px", delay: 100 });   
+            setSmallNav({ ...wrapperProps, ...navItemsProps, color: "#555", marginRight:"90px", delay: 0 });   
             setSocialAppear({ opacity: 0, right: "-200px" });
         }
     }, [pageAnchor])

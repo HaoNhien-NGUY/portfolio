@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 
+import logoSamsung from '../../../assets/logo-campus.png';
+
 import './competences.css';
 
 const from = { opacity: 0, top: "35px" };
@@ -11,7 +13,7 @@ function Competences(props) {
     const { pageAnchor } = props;
     const firstTime = useRef(true);
 
-    const [firstProps, setFirstProps] = useSpring(() => ({ ...from, config: config.default }));
+    const [firstProps, setFirstProps] = useSpring(() => ({ ...from, config: config.slow }));
 
     useEffect(() => {
         if (firstTime.current && pageAnchor.destination == "competences") {
@@ -31,8 +33,9 @@ function Competences(props) {
                         <br></br>
                     </div>
                     <div className="col l6 m12 recherche">
-                        <p>Je suis actuellement en recherche d'une <b>alternance</b>.</p>
-                        <p>Du<b> 2 novembre 2020</b> au <b>29 octobre 2021</b> au rythme de <br></br><b>3 semaines en entreprises / 1 semaine en formation.</b></p>
+                        <img src={logoSamsung} className="logo-samsung"></img>
+                        {/* <p>Je suis actuellement en recherche d'une <b>alternance</b>.</p>
+                        <p>Du<b> 2 novembre 2020</b> au <b>29 octobre 2021</b> au rythme de <br></br><b>3 semaines en entreprises / 1 semaine en formation.</b></p> */}
                     </div>
                 </div>
             </animated.div>

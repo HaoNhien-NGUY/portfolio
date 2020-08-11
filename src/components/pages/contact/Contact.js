@@ -25,7 +25,7 @@ function Contact(props) {
 
     return (
         <div className="container contact">
-            <animated.h4 className="title center-align" style={titleProps}>Intéressé par mon profil ? &nbsp;Contactez moi.</animated.h4>
+            <animated.h4 className="title center-align" style={titleProps}>Contacts.</animated.h4>
             <animated.h5 className="center-align" style={mailProps}>Email</animated.h5>
             <animated.h4 className="center-align" style={mailProps}><a href="mailto:hao-nhien.nguyen@epitech.eu">hao-nhien.nguyen@epitech.eu</a></animated.h4>
             <animated.h5 className="center-align" style={linkedinProps}>LinkedIn</animated.h5>
