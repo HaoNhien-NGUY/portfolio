@@ -1,5 +1,5 @@
 {
-  "homepage": "https://hao-nhien.me/",
+  "homepage": "https://haonhien-nguy.github.io/portfolio/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +12,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
-    "swiper": "^6.0.1"
+    "swiper": "^6.8.0"
   },
   "scripts": {
     "start": "react-scripts start",

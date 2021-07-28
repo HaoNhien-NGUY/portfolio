@@ -29,7 +29,7 @@ function Competences(props) {
                 <div className="row cards z-depth-1">
                     <div className="col l6 m12 formation" style={{ paddingRight: "25px" }}>
                         <p style={{ fontSize: "1.3rem", color: "#333" }}><b style={{color: "#72BBFF"}}>Samsung Campus - EPITECH</b> &nbsp;&nbsp;|&nbsp;&nbsp; 2019 - 2021<br></br>Intégrateur - Développeur Web Full Stack</p>
-                        <p>Travailler sur des projets ciblés m'a permis de développer de nouvelles compétences et une capacité d'adaptation rapide.</p>
+                        <p>Pédagogie d’apprentissage autonome par projets (individuels et en groupes). Formation en 2 ans dont une année en alternance. </p>
                         <br></br>
                     </div>
                     <div className="col l6 m12 recherche">
@@ -45,7 +45,7 @@ function Competences(props) {
                     <div className="col m6 offset-l0 l2">
                         <h4>Front-End</h4>
                         <p>HTML5 / CSS3</p>
-                        <p>React.js / Redux</p>
+                        <p>React.js</p>
                         <p>jQuery</p>
                         <p>Bootstrap</p>
                     </div>
@@ -60,10 +60,10 @@ function Competences(props) {
                         <p>MySQL</p>
                     </div>
                     <div className="col m6 offset-l3 l2">
-                        <h4 className="">Autres</h4>
+                        <h4 className="">Outils</h4>
                         <p className="">Git</p>
                         <p className="">GitHub / GitLab</p>
-                        <p className="">Méthodologie Agile</p>
+                        <p className="">Trello</p>
                     </div>
                 </div>
             </animated.div>
