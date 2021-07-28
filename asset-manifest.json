@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.65a8802d.chunk.css",
-    "main.js": "/portfolio/static/js/main.f6a7ab4e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f6a7ab4e.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.acb75a94.chunk.css",
+    "main.js": "/portfolio/static/js/main.16d2fb9b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.16d2fb9b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.f7a50022.chunk.css": "/portfolio/static/css/2.f7a50022.chunk.css",
     "static/js/2.e8fd4158.chunk.js": "/portfolio/static/js/2.e8fd4158.chunk.js",
     "static/js/2.e8fd4158.chunk.js.map": "/portfolio/static/js/2.e8fd4158.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.77a586e1e95b4f9403b86bf209e2556e.js": "/portfolio/precache-manifest.77a586e1e95b4f9403b86bf209e2556e.js",
+    "precache-manifest.f8f7f57afcc5087e1ad6b541af3f5d41.js": "/portfolio/precache-manifest.f8f7f57afcc5087e1ad6b541af3f5d41.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.f7a50022.chunk.css.map": "/portfolio/static/css/2.f7a50022.chunk.css.map",
-    "static/css/main.65a8802d.chunk.css.map": "/portfolio/static/css/main.65a8802d.chunk.css.map",
+    "static/css/main.acb75a94.chunk.css.map": "/portfolio/static/css/main.acb75a94.chunk.css.map",
     "static/js/2.e8fd4158.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e8fd4158.chunk.js.LICENSE.txt",
-    "static/media/CV_HaoNhien-NGUYEN.pdf": "/portfolio/static/media/CV_HaoNhien-NGUYEN.31816aa7.pdf",
+    "static/media/CV_HaoNhien-NGUYEN.pdf": "/portfolio/static/media/CV_HaoNhien-NGUYEN.306b5cc6.pdf",
     "static/media/curriculum-vitae.png": "/portfolio/static/media/curriculum-vitae.9f4b76f4.png",
     "static/media/ecommerce2.png": "/portfolio/static/media/ecommerce2.9b21511b.png",
     "static/media/index.css": "/portfolio/static/media/external-link.18d132c9.ico",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.f7a50022.chunk.css",
     "static/js/2.e8fd4158.chunk.js",
-    "static/css/main.65a8802d.chunk.css",
-    "static/js/main.f6a7ab4e.chunk.js"
+    "static/css/main.acb75a94.chunk.css",
+    "static/js/main.16d2fb9b.chunk.js"
   ]
 }
